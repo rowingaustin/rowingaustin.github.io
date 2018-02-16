@@ -67,7 +67,7 @@ main h2 {
 }
 
 main figure { margin: 0; width:100%; }
-main figure img { width: 100%; max-height: auto;}
+main figure img { width: 100%; height: auto;}
 
 section {
     font-family: 'Lato', sans-serif;
