@@ -2,12 +2,14 @@
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
+@import url('https://fonts.googleapis.com/css?family=Candal%7CLato');
+
 body {
     font-size: 16px;
+
 }
 
-/* Declare the base font-family - from google font api or other */
-@import url('https://fonts.googleapis.com/css?family=Candal%7COpen+Sans');
+
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
