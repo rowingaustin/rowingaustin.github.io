@@ -2,11 +2,10 @@
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
+@import url('https://fonts.googleapis.com/css?family=Candal|Lato');
 
 body {
     font-size: 16px;
-    @import url('https://fonts.googleapis.com/css?family=Candal007CLato');
-
 }
 
 
