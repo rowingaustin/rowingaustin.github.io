@@ -27,7 +27,7 @@
     }
 /*-----Weather Gallery Grid-----*/
     div.weatherGallery {
-        grid-template-columns: 400px 400px 400px;
+        grid-template-columns: repeat(3, 32%);
     }
     div.weatherGallery figure:hover {
         box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
