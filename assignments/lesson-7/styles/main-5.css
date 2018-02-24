@@ -149,7 +149,7 @@ main.gallerystyle {
 div.weatherGallery {
     padding: 0 2%;
     display: grid;
-    grid-template-columns: repeat(1 100%);
+    grid-template-columns: repeat(1, 100%);
 }
 div.weatherGallery figure {margin: 1rem 0;}
 div.weatherGallery figure img {width: 100%;}
