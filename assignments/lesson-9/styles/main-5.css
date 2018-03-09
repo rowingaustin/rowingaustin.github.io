@@ -309,13 +309,14 @@ input:required:valid {
 #welcome {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     font-family: 'lato', sans-serif;
     font-size: 1.7em;
     margin: 0 2%;
 }
 div#welcome p {
-    margin: 0 5px 10px 0;
+    color: #222E50;
+    margin: 0 20px 10px 0;
     max-width: 50%;
     border: #C3CACC solid 1px;
     box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
@@ -324,9 +325,8 @@ div#welcome p {
 }
 h2.welcomehead {
     margin: 2% 2% 1% 0;
-    text-align: center;
     color: #79B473;
-    font-size: 2.7em;
+    font-size: 2.3em;
 }
 #welcome figure img {
     width: 100%;
@@ -336,6 +336,7 @@ h2.welcomehead {
 #welcome figure {
     margin: 0;
 }
+
 /*-----FOOTER-----*/
 footer {
     padding-top: .8rem;

@@ -1,4 +1,3 @@
-var header = document.querySelector('header');
 var section = document.querySelector('section');
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
@@ -7,38 +6,32 @@ request.responseType = 'json';
 request.send();
 request.onload = function() {
     var townData = request.response;
-    populateHeader(townData);
-    showHeroes(townData);
+    showData(townData);
 }
-function populateHeader(jsonObj) {
-    var myH1 = document.createElement('h1');
-    myH1.textContent = jsonObj['squadName'];
-    header.appendChild(myH1);
+function showData(jsonObj) {
+    var data = jsonObj['towns'];
 
-    var myPara = document.createElement('p');
-    myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-    header.appendChild(myPara);
-}
-function showHeroes(jsonObj) {
-    var heroes = jsonObj['members'];
-
-    for (var i = 0; i < heroes.length; i++) {
+    for (var i = 0; i < data.length; i++) {
+        if (i === 2) { continue; }
         var myArticle = document.createElement('article');
         var myH2 = document.createElement('h2');
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
+        var myPara4 = document.createElement('p');
         var myList = document.createElement('ul');
 
-        myH2.textContent = heroes[i].name;
-        myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
-        myPara2.textContent = 'Age: ' + heroes[i].age;
-        myPara3.textContent = 'Superpowers:';
+        myH2.textContent = data[i].name;
+        myPara1.textContent = 'Town Moto: ' + data[i].motto;
+        myPara2.textContent = 'Year Founded: ' + data[i].yearFounded;
+        myPara3.textContent = 'Current Population:' + data[i].currentPopulation;
+        myPara4.textContent = 'Average Rainfall:' + data[i].averageRainfall;
 
-        var superPowers = heroes[i].powers;
-        for (var j = 0; j < superPowers.length; j++) {
+        var townEvents = data[i].events;
+        for (var j = 0; j < townEvents.length; j++) {
+            if (i === 2) { continue; }
             var listItem = document.createElement('li');
-            listItem.textContent = superPowers[j];
+            listItem.textContent = townEvents[j];
             myList.appendChild(listItem);
         }
 
@@ -46,8 +39,10 @@ function showHeroes(jsonObj) {
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
+        myArticle.appendChild(myPara4);
         myArticle.appendChild(myList);
 
         section.appendChild(myArticle);
     }
 }
+document.getElementById("showData").innerHTML = showData;

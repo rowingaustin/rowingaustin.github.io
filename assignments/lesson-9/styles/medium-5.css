@@ -62,27 +62,33 @@
         grid-gap: 2%;
     }
     /*-----HOMEPAGE------*/
-    .hometown {
-        text-align: center;
-        border: #C3CACC solid 1px;
-        box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
-        margin: 5px;
-    }
-    .hometown h3 {
-        padding-top: 10px;
-    }
+
     .homeSection {
         display: flex;
-        flex-flow: nowrap;
-        justify-content: center;
-        font-size: 1.2em;
+        flex-flow: row;
+        font-size: 1vw;
+        border:none;
+        margin: 0;
+        padding: 0;
+    }
+    .homeSection p {
+        margin: 0;
+    }
+    div#towns {
+        border: 5px solid #79b473;
+        border-radius: .3em;
+        padding: .8rem 2%;
+        margin: .8rem;
+    }
+    .homeSection article {
+        margin: 0;
+        padding: 0 20px;
     }
     figure.townPhoto img {
         width: 100%;
         height: auto;
-    }
-    figure.townPhoto {
-        margin: 20px;
+        border: #C3CACC solid 1px;
+        box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
     }
 
 }
