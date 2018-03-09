@@ -24,8 +24,8 @@ function showData(jsonObj) {
         myH2.textContent = data[i].name;
         myPara1.textContent = 'Town Moto: ' + data[i].motto;
         myPara2.textContent = 'Year Founded: ' + data[i].yearFounded;
-        myPara3.textContent = 'Current Population:' + data[i].currentPopulation;
-        myPara4.textContent = 'Average Rainfall:' + data[i].averageRainfall;
+        myPara3.textContent = 'Current Population: ' + data[i].currentPopulation;
+        myPara4.textContent = 'Average Rainfall: ' + data[i].averageRainfall;
 
         var townEvents = data[i].events;
         for (var j = 0; j < townEvents.length; j++) {

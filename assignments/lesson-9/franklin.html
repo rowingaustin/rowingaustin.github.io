@@ -57,20 +57,15 @@
             </figure>
             <section id="summary">
                 <h3>Weather Summary</h3>
-                <div class="current">
-                    <picture>
-                        <img src="images/sunny.png" alt="Sun Icon">
-                    </picture>
-                    <p>Sunny</p>
-                </div>
-                <div class="highlow">
-                    <p>High: 90 &#176;F</p>
-                    <p>Low: 66 &#176;F</p>
-                </div>
-                <div class="conditions">
-                    <p>Precipitation: 0%</p>
-                    <p>Wind Speed: 5 mph SW</p>
-                    <p>Wind Chill: <strong id="windChill"></strong>
+                <p class="current"><span id="currentTemp" > 120</span>&deg;F
+
+                    <img src="" alt="Weather Icon" id="weatherIcon" class="current"></p>
+
+               <div class="conditions">
+                    <p>Feels Like: <span id="feelsLike"> 120</span>&deg;F</p>
+                    <p>Precipitation: <span id="precipToday"> 0%</span>%</p>
+                    <p>Wind Speed: <span id="windSpeed"> 5</span> mph</p>
+                    <p>Wind Chill: <span id="windChill"> 5</span>&deg;F</p>
                 </div>
             </section>
             <section class="forecast">
@@ -127,10 +122,11 @@
             </aside>
             <p class="footer-bar">&copy;2018 All Rights Reserved | Hometown Weather | <span id="currentdate"></span></p>
         </footer>
-
+        <script src="scripts/weathersummary.js"></script>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/windchill.js"></script>
+
 
     </body>
 </html>
