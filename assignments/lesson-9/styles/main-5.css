@@ -288,7 +288,7 @@ input:required:valid {
     background-position: 4px -161px; /*shows the green check*/
 }
 /*-----HOMEPAGE-----*/
-.homeSection {
+#homeTowns {
     display: none;
 }
 #welcome {

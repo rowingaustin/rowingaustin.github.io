@@ -14,14 +14,14 @@ function showData(jsonObj) {
     for (var i = 0; i < data.length; i++) {
         if (i === 2) { continue; }
         var myArticle = document.createElement('article');
-        var myH2 = document.createElement('h2');
+        var myH5 = document.createElement('h5');
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
         var myPara4 = document.createElement('p');
         var myList = document.createElement('ul');
 
-        myH2.textContent = data[i].name;
+        myH5.textContent = data[i].name;
         myPara1.textContent = 'Town Moto: ' + data[i].motto;
         myPara2.textContent = 'Year Founded: ' + data[i].yearFounded;
         myPara3.textContent = 'Current Population: ' + data[i].currentPopulation;
@@ -35,7 +35,7 @@ function showData(jsonObj) {
             myList.appendChild(listItem);
         }
 
-        myArticle.appendChild(myH2);
+        myArticle.appendChild(myH5);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
@@ -45,4 +45,4 @@ function showData(jsonObj) {
         section.appendChild(myArticle);
     }
 }
-document.getElementById("showData").innerHTML = showData;
+

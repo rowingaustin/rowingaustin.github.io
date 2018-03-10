@@ -63,32 +63,42 @@
     }
     /*-----HOMEPAGE------*/
 
-    .homeSection {
-        display: flex;
-        flex-flow: row;
-        font-size: 1vw;
-        border:none;
-        margin: 0;
-        padding: 0;
+    #homeTowns {
+        padding: 0 2%;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        border: none;
     }
-    .homeSection p {
-        margin: 0;
+    section>article {
+        border: 5px solid #79B473;
+        padding: 0 15px 0 15px;
+        margin: 5%;
+        line-height: normal;
     }
-    div#towns {
-        border: 5px solid #79b473;
-        border-radius: .3em;
-        padding: .8rem 2%;
-        margin: .8rem;
+    section>article:p {
+        text-align: center;
     }
-    .homeSection article {
-        margin: 0;
-        padding: 0 20px;
+    #homeTowns h5 {
+        font-family: 'Candal', sans-serif;
+        font-size: 2vw;
+        color: #222E50;
+        margin: 2% 25%;
     }
-    figure.townPhoto img {
-        width: 100%;
-        height: auto;
-        border: #C3CACC solid 1px;
-        box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+    #homeTowns p {
+        font-size: 1.7vw;
+        margin: 10px 0;
     }
+    #homeTowns ul {
+        font-size: 1.7vw;
+        line-height: 1.7em;
 
+    }
+    section#photosBelow {
+        margin: 1rem 0;
+        border: none;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+    }
+    section#photosBelow figure {margin: 0 2%;}
+    section#photosBelow figure img {width: 100%;}
 }
