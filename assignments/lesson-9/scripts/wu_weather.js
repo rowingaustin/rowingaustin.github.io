@@ -26,7 +26,7 @@ document.getElementById('windChill').innerHTML = weatherInfo.current_observation
 
 var weatherForecast = new XMLHttpRequest()
 
-weatherForecast.open('GET','http://api.wunderground.com/api/5cc13ffc94a61b9c/forecast/q/MN/Franklin.json', true);
+weatherForecast.open('GET','https://api.wunderground.com/api/5cc13ffc94a61b9c/forecast/q/MN/Franklin.json', true);
 
 weatherForecast.send();
 
