@@ -75,9 +75,6 @@
         margin: 5%;
         line-height: normal;
     }
-    section>article:p {
-        text-align: center;
-    }
     #homeTowns h5 {
         font-family: 'Candal', sans-serif;
         font-size: 2vw;
