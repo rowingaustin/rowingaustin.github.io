@@ -291,6 +291,9 @@ input:required:valid {
 #homeTowns {
     display: none;
 }
+#photosBelow {
+    display: none;
+}
 #welcome {
     display: flex;
     flex-flow: row wrap;
