@@ -15,17 +15,19 @@ function showData(jsonObj) {
         if (i === 2) { continue; }
         var myArticle = document.createElement('article');
         var myH5 = document.createElement('h5');
-        var myPara1 = document.createElement('p');
+        var myPara1 = document.createElement('h6');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
         var myPara4 = document.createElement('p');
+        var myPara5 = document.createElement('h4');
         var myList = document.createElement('ul');
 
         myH5.textContent = data[i].name;
-        myPara1.textContent = 'Town Moto: ' + data[i].motto;
+        myPara1.textContent = data[i].motto;
         myPara2.textContent = 'Year Founded: ' + data[i].yearFounded;
         myPara3.textContent = 'Current Population: ' + data[i].currentPopulation;
         myPara4.textContent = 'Average Rainfall: ' + data[i].averageRainfall;
+        myPara5.textContent = 'Events';
 
         var townEvents = data[i].events;
         for (var j = 0; j < townEvents.length; j++) {
@@ -40,6 +42,7 @@ function showData(jsonObj) {
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myPara4);
+        myArticle.appendChild(myPara5);
         myArticle.appendChild(myList);
 
         section.appendChild(myArticle);

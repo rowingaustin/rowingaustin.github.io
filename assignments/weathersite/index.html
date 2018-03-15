@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Storm Center | Hometown Weather</title>
+        <title>Home Page | Hometown Weather</title>
         <meta name="author" content="Marilee Austin | CIT 230 BYU-Idaho">
-        <meta name="description" content="Users can submit information about the weather in their own area">
+        <meta name="description" content="Weather information for Franklin, Greenville and Springfield, MU">
         <!-- external style references in the proper cascading order -->
         <!-- Google API font reference -->
         <link href="https://fonts.googleapis.com/css?family=Candal%7CLato" rel="stylesheet">
@@ -26,14 +26,14 @@
     <body>
 
         <header>
-            <img src="images/logo0.png" alt="The site logo" srcset="images/logo@1x.png 1x, images/logo@2x.png 2x, images/logo@3x.png 3x">
+            <img src="images/logo0.png" alt="Umbrella logo" srcset="images/logo@1x.png 1x, images/logo@2x.png 2x, images/logo@3x.png 3x">
             <div>
                 <h1>Hometown Weather</h1>
                 <div class="subheading">Weather You Can Use</div>
             </div>
         </header>
 
-        <!-- site navigation use placeholder references -->
+        <!-- site navigation -->
         <nav>
             <button onclick="toggleNavMenu()">&#9776;</button>
             <ul class="hide mainmenu" id="primaryNav">
@@ -55,9 +55,10 @@
                              images/EnveitgFrance2000.jpg 1200w">
             </figure>
             <article><h3>What is Drought?</h3>
-                <p>Drought is a normal and recurring feature of climate. Although it occurs in virtually all of the world's climatic zones, its characteristics vary significantly from one region to another. In some of the world's most arid regions, a drought occurs when annual precipitation drops below 7 inches per year, while in the world's most moisture rich regions, a few weeks without rain might constitute a drought! Consequently, there is no universal definition of drought. In the most general sense, drought is a result of a deficiency of precipitation over an extended period of time, resulting in a water shortage, which impacts normal water usage. The severity of a drought depends upon the degree of moisture deficiency, its duration, and the size of the affected area. Because it is so hard to develop a quantitative definition for drought, it is difficult to determine precisely when a drought starts and ends.</p></article>
+                <p>Drought is a normal and recurring feature of climate. Although it occurs in virtually all of the world's climatic zones, its characteristics vary significantly from one region to another. In some of the world's most arid regions, a drought occurs when annual precipitation drops below 7 inches per year, while in the world's most moisture rich regions, a few weeks without rain might constitute a drought! Consequently, there is no universal definition of drought. In the most general sense, drought is a result of a deficiency of precipitation over an extended period of time, resulting in a water shortage, which impacts normal water usage. The severity of a drought depends upon the degree of moisture deficiency, its duration, and the size of the affected area. Because it is so hard to develop a quantitative definition for drought, it is difficult to determine precisely when a drought starts and ends.</p>
+            </article>
                 <section id="homeTowns">
-            </section>
+                </section>
                     <section id="photosBelow">
                     <div>
                         <figure>
@@ -76,17 +77,16 @@
                         </div>
                 </section>
         </main>
+
         <footer>
             <aside>
                 Hometown Weather<br> 123 Main Street<br> Franklin, MU 12345
             </aside>
-            <p class="footer-bar">                &copy;2018 All Rights Reserved | Hometown Weather | Terms of Use<br><span id="currentdate"></span><br>
-            </p>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Hometown Weather | Terms of Use<br><span id="currentdate"></span><br></p>
         </footer>
 
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
-        <script src="scripts/severity.js"></script>
         <script src="scripts/towndata.js"></script>
         <script src="scripts/mainmenu.js"></script>
 

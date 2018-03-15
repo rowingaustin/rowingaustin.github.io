@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Storm Center | Hometown Weather</title>
         <meta name="author" content="Marilee Austin | CIT 230 BYU-Idaho">
-        <meta name="description" content="Users can submit information about the weather in their own area">
+        <meta name="description" content="Users can submit weather information in their own area">
         <!-- external style references in the proper cascading order -->
         <!-- Google API font reference -->
         <link href="https://fonts.googleapis.com/css?family=Candal%7CLato" rel="stylesheet">
@@ -26,14 +26,14 @@
     <body>
 
         <header>
-            <img src="images/logo0.png" alt="The site logo" srcset="images/logo@1x.png 1x, images/logo@2x.png 2x, images/logo@3x.png 3x">
+            <img src="images/logo0.png" alt="Umbrella logo" srcset="images/logo@1x.png 1x, images/logo@2x.png 2x, images/logo@3x.png 3x">
             <div>
                 <h1>Hometown Weather</h1>
                 <div class="subheading">Weather You Can Use</div>
             </div>
         </header>
 
-        <!-- site navigation use placeholder references -->
+        <!-- site navigation -->
         <nav>
             <button onclick="toggleNavMenu()">&#9776;</button>
             <ul class="hide mainmenu" id="primaryNav">
@@ -69,7 +69,8 @@
                                 </datalist>
                             </label>
                             <label><span>Storm Severity (1 to 10):</span><span id="ratingvalue">5</span><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"></label>
-                            <label><span>Storm Region:</span><select name="region">
+                            <label><span>Storm Region:</span>
+                                <select name="region">
                                     <option value="select" disabled selected>Select Region</option>
                                     <option value="franklin">Franklin</option>
                                     <option value="greenville">Greenville</option>
@@ -79,15 +80,15 @@
                             <label class="container"><span class="dangerAnswer">Yes</span>
                                     <input type="radio" checked="checked" name="radio">
                                     <span class="checkmark"></span>
-                                </label>
-                                <label class="container"><span class="dangerAnswer">Maybe</span>
+                            </label>
+                            <label class="container"><span class="dangerAnswer">Maybe</span>
                                     <input type="radio" name="radio">
                                     <span class="checkmark"></span>
-                                </label>
-                                <label class="container"><span class="dangerAnswer">No</span>
+                            </label>
+                            <label class="container"><span class="dangerAnswer">No</span>
                                     <input type="radio" name="radio">
                                     <span class="checkmark"></span>
-                                </label>
+                            </label>
                         </fieldset>
                         <fieldset>
                             <legend><span>Additional Information:</span></legend>
@@ -104,8 +105,7 @@
             <aside>
                 Hometown Weather<br> 123 Main Street<br> Franklin, MU 12345
             </aside>
-            <p class="footer-bar">                &copy;2018 All Rights Reserved | Hometown Weather | Terms of Use<br><span id="currentdate"></span><br>
-            </p>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Hometown Weather | Terms of Use<br><span id="currentdate"></span><br></p>
         </footer>
 
         <script src="scripts/hamburger.js"></script>

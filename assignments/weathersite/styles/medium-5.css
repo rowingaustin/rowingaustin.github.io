@@ -85,6 +85,13 @@
         margin: 2%;
     }
 
+    #homeTowns h6 {
+        font-family: 'lato', sans-serif;
+        color: #79B473;
+        font-size: 1.5vw;
+        margin: 0 2% 5% 2%;
+    }
+
     #homeTowns p {
         font-size: 1.5vw;
         margin: 10px 0;
@@ -94,7 +101,8 @@
         font-size: 1.5vw;
         line-height: 1.7em;
         text-align: left;
-        padding-left: 10%;
+        padding-left: 15%;
+        margin: 0 0 5% 0;
     }
 
     section#photosBelow {
