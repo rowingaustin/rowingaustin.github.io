@@ -19,7 +19,7 @@ function showData(jsonObj) {
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
         var myPara4 = document.createElement('p');
-        var myPara5 = document.createElement('h4');
+        var myPara5 = document.createElement('h5');
         var myList = document.createElement('ul');
 
         myH5.textContent = data[i].name;
