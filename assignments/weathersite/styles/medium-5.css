@@ -74,27 +74,26 @@
         background-color: white;
         border: 5px solid #79B473;
         padding: 0 15px 0 15px;
-        margin: 10%;
-        line-height: normal;
+        margin: 5%;
     }
 
     #homeTowns h5 {
         font-family: 'Candal', sans-serif;
         font-size: 2vw;
         color: #222E50;
-        margin: 2%;
+        margin: 5% 0 0 0;
     }
 
     #homeTowns h6 {
         font-family: 'lato', sans-serif;
         color: #79B473;
         font-size: 1.5vw;
-        margin: 0 2% 5% 2%;
+        margin: 5% 0;
     }
 
     #homeTowns p {
         font-size: 1.5vw;
-        margin: 10px 0;
+        margin: 2%;
     }
 
     #homeTowns ul {
@@ -102,7 +101,7 @@
         line-height: 1.7em;
         text-align: left;
         padding-left: 15%;
-        margin: 0 0 5% 0;
+        margin: 2% 10% 5% 0;
     }
 
     section#photosBelow {
