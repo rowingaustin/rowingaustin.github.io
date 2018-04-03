@@ -1,0 +1,31 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+
+    div.threeGallery {
+        grid-template-columns: repeat(3, 32%);
+    }
+    div.threeGallery figure:hover {
+        box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+    }
+    .customersTalk {
+        display: block;
+    }
+    .customersTalk h3 {
+        font-family: 'Asap condensed', sans-serif;
+        font-style: italic;
+        font-size: 3rem;
+        font-weight: 800;
+        text-align: center;
+    }
+    aside.reviews {
+        font-family: 'Open sans', sans-serif;
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 20% 5% 20%;
+    }
+    section.intro {
+        margin: 5% 20vw;
+    }
+}
