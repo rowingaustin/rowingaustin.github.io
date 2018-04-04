@@ -4,9 +4,9 @@ var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
-request.onload = function() {
+request.onload = function () {
     var serviceData = request.response;
-    showData (serviceData);
+    var showData = (serviceData);
 }
 function showData(jsonObj) {
     var serviceOffer = jsonObj['services'];

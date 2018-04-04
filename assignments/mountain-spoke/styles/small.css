@@ -171,8 +171,8 @@ div.threeGallery ul {
 }
 
 /* SERVICE TABLE */
-section#serviceTable {
-    display: grid;
+section.serviceTable {
+    display: flex;
 }
 
 /* BLUE LOGO */
