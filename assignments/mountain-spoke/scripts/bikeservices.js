@@ -1,5 +1,5 @@
 var section = document.querySelector('section');
-var requestURL = 'https://rowingaustin.github.io/assignments/mountain_spoke/data/servicedata.json';
+var requestURL = 'data/servicedata.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
