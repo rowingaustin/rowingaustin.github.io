@@ -25,10 +25,10 @@
         display: flex;
         justify-content: space-around;
         margin: 0 9% ;
-        background-color: rgb(0,0,0,0.1);
+        background-color: rgba(0,0,0,0.1);
         box-shadow: 5px 10px 20px #BFBFBF;
     }
-    section.intro, {
+    div.intro {
         margin: 5% 20vw;
     }
 

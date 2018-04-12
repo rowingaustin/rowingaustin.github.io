@@ -26,13 +26,13 @@
     div.threeGallery a {
        margin: 0;
     }
-    footer section.footerLinks ul li{
+    footer div.footerLinks ul li{
         display: inline-flex;
         border: none;
         border-right: 1px solid rgba(0,0,0,0.3);
         padding: .6rem 2rem;
     }
-    footer section.footerLinks {
+    footer div.footerLinks {
         text-align: center;
     }
 
