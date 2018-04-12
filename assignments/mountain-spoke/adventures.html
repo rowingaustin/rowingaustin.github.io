@@ -35,6 +35,7 @@
         <nav>
             <button onclick="toggleNavMenu()">&#9776;</button>
             <ul class="hide mainmenu" id="primaryNav">
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="shop.html">SHOP</a></li>
                 <li><a href="adventures.html">ADVENTURES</a></li>
                 <li><a href="service.html">SERVICE</a></li>
@@ -44,7 +45,7 @@
         </nav>
 
         <main>
-            <section id="callToAction">
+            <div id="callToAction">
                 <h2 class="h2Contrast">ADVENTURE<br>BIKE TOURS</h2>
                 <div class="blackBox">CALL 1-800-555-2690</div>
                     <figure>
@@ -53,7 +54,7 @@
                                  images/tours-800.jpg 800w,
                                  images/tours-1200.jpg 1200w">
                     </figure>
-            </section>
+            </div>
 
             <section class="intro">
                 <p>Our Expert guides are ready to show you the majesty of the Rocky Mountains. Available throughout the year and whether you are a skilled cyclist or just finding the pedals, you'll find an adventure just for you. We are dedicated to making your trip a memorable one. Choose below between our Summer, Autumn or Winter packages to start making the adventure of a lifetime.</p>
@@ -61,34 +62,29 @@
 
             <section class="galleryStyle">
                 <div class="threeGallery">
-                    <figure><img  src="images/summer-tour.jpg" alt="Summber Bicyling Tour"><figcaption>SUMMER</figcaption>
-                        <ul>
-                            <li><h3>Summer Adventure Details</h3></li><li>Length: 3 Days</li>
-                            <li>Skill: Beginner, Intermediate & Expert</li>
-                            <li>Cost: $600</li>
-                            <li>Location: Sunrise Campground</li>
-                        </ul>
+                    <figure>
+                        <h5>SUMMER</h5>
+                        <h6>$600</h6>
+                        <img  src="images/summer-tour.jpg" alt="Summer Bicyling Tour">
+                        <p>A 3-Day Adventure starting from the beautiful Sunrise Campground. Enjoy the beautiful Summer, Mountain weather. This adventure is perfect for beginners or intermediate riders.</p>
                     </figure>
-                    <figure><img  src="images/fall-tours.jpg" alt="Mountain Biking in Autumn"><figcaption>AUTUMN</figcaption>
-                        <ul>
-                            <li><h3>Autumn Adventure Details</h3></li>
-                            <li>Length: 4 Days</li>
-                            <li>Skill: Beginner & Intermediate</li>
-                            <li>Cost: $900</li>
-                            <li>Location: Bear Canyon Campground</li>
-                        </ul>
+
+                    <figure>
+                        <h5>AUTUMN</h5>
+                        <h6>$900</h6>
+                        <img  src="images/fall-tours.jpg" alt="Mountain Biking in Autumn">
+                        <p>This 4-Day adventure, available from August to the end of October, is a color paradise. Starting at Bear Canyon Campground, this tour is for intermediate experienced riders.</p>
                     </figure>
-                    <figure><img  src="images/winter-tour.jpg" alt="Winter Mountain Biking"><figcaption>WINTER</figcaption>
-                        <ul>
-                            <li><h3>Winter Adventure Details</h3></li>
-                            <li>Length: 5 Days</li>
-                            <li>Skill: Intermediate & Expert</li>
-                            <li>Cost: $1,049</li>
-                            <li>Location: Hot Springs Campground</li>
-                        </ul>
+
+                    <figure>
+                        <h5>WINTER</h5>
+                        <h6>$1,049</h6>
+                        <img  src="images/winter-tour.jpg" alt="Winter Mountain Biking">
+                        <p>Experience Winter like never before with this 5-Day Adventure. It is our most difficult adventure and perhaps the most rewarding. The winter terrain is for experienced riders.</p>
                     </figure>
                 </div>
             </section>
+
             <section class="customersTalk">
                 <h3>Call 801-555-2690 to book your adventure today!</h3>
             </section>
@@ -102,14 +98,15 @@
                 <aside class="reviews">
                     <blockquote >"The Winter package was amazing. I've never had a trip take me away like this one did."<br><br>Eric&mdash;New York</blockquote>
                     <blockquote >"We rode the Summer trip and are coming back for Autumn. We might come every year from now on. It was that fun."<br><br>Candice&mdash;Denver</blockquote>
-                    <blockquote >"Go in the Fall! The Autumn colors make every effort on the hills worth it. It'w worth every penny too. I'd recommend it to anyone."<br><br>George&mdash;Manchester</blockquote>
+                    <blockquote >"Go in the Fall! The Autumn colors make every effort on the hills worth it. It's worth every penny too. I'd recommend it to anyone."<br><br>George&mdash;Manchester</blockquote>
                 </aside>
             </section>
         </main>
-        <footer>
 
+        <footer>
             <section class="footerLinks">
                 <ul>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="shop.html">SHOP</a></li>
                     <li><a href="adventures.html">ADVENTURES</a></li>
                     <li><a href="service.html">SERVICE</a></li>
@@ -124,7 +121,11 @@
                     <a class="socialmedia" target="_blank" href="https://www.instagram.com/"><img class="icon" src="images/instagram.png" alt="instagram"></a>
                     <a class="socialmedia" target="_blank" href="https://www.twitter.com/"><img class="icon" src="images/twitter.png" alt="twitter"></a>
                 </div>
-                <p>Mountain Spoke<br>1245 Aspen Lane<br>Bozeman, Montana</p><p>&copy;2018 Mountain Spoke Bicycle Company<br><br><span id="currentdate"></span></p>
+                    <p>Mountain Spoke<br>3950 Valley Commons Dr.<br>Bozeman, Montana</p><p>&copy;2018 Mountain Spoke Bicycle Company<br><br>
+                    <span id="currentdate"></span></p>
+                <div id="reference">
+                    <a href="resources.html"><h2>RESOURCES</h2></a> | <a href="overview.html"><h2>OVERVIEW</h2></a>
+                </div>
             </section>
         </footer>
 

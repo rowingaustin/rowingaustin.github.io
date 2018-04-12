@@ -13,12 +13,18 @@
         border-right: 1px solid rgba(0,0,0,0.3);
         padding: .6rem 2rem;
     }
+    nav ul li {
+        display: inline-flex;
+    }
 
     /*---Photo Gallery Grid-----*/
-    div.threeGallery {
-        grid-template-columns: repeat(1, 49%);
-        grid-gap: 2%;
-        justify-content: center;
+    section .threeGallery {
+        grid-template-columns: repeat(3, 34%);
+        width: 100%;
+        margin: 0 0 5% 0;
+    }
+    div.threeGallery a {
+       margin: 0;
     }
     footer section.footerLinks ul li{
         display: inline-flex;
@@ -30,4 +36,10 @@
         text-align: center;
     }
 
+    /* SERVICE TABLE */
+    aside {
+        grid-template-columns: repeat(3, 34%);
+        width: 100%;
+        margin: 0;
+    }
 }
