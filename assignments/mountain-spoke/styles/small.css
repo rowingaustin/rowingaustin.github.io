@@ -511,6 +511,11 @@ p>a {
     font-size: .8rem;
 }
 
+/* OVERVIEW */
+video {
+    width: 100%;
+}
+
  /* FOOTER */
 footer {
     background-color: #000;
