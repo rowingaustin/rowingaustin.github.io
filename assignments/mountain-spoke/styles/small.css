@@ -426,9 +426,6 @@ input:required:valid {
 #slideshow > div {
     position: absolute;
 }
-#accordion {
-
-}
 #accordion p {
     font-family: 'Open sans', sans-serif;
     margin: 0 9%;

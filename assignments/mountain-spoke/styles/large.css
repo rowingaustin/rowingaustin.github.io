@@ -47,4 +47,8 @@
     .contactUs div {
         margin: 20px
     }
+
+  section#shopCenter {
+        margin: 0 20vw;
+    }
 }
