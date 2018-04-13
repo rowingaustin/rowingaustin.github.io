@@ -5,6 +5,9 @@
 body {
     font-size: 16px;
     /* Declare the base font-family - from google font api or other */
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
@@ -119,7 +122,7 @@ div.whiteBox {
 }
 div.intro {
     font-family: 'Open Sans', sans-serif;
-    margin: 40px 9vw;
+    margin: 20px 9vw;
     font-size: 1.3rem;
     line-height: 2rem;
 }
@@ -413,7 +416,7 @@ input:required:valid {
 }
 
 
-/*  SHOP 2  */
+/*  SHOP  */
 #slideshow {
     position: relative;
     width: 100%;
@@ -422,6 +425,25 @@ input:required:valid {
 }
 #slideshow > div {
     position: absolute;
+}
+#accordion {
+
+}
+#accordion p {
+    font-family: 'Open sans', sans-serif;
+    margin: 0 9%;
+    font-size: 1.3rem;
+    line-height: 1.5em;
+}
+#accordion img {
+    width: 100%;
+}
+.price {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
 }
 
 /* BLUE LOGO */
@@ -492,7 +514,6 @@ p>a {
     font-size: .8rem;
 }
 
-
  /* FOOTER */
 footer {
     background-color: #000;
@@ -522,4 +543,11 @@ footer section.footer-bar {
 }
 footer a {
     color: #000;
+}
+.clearfix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }
